@@ -4,31 +4,31 @@
 
 当前是17.0.0最新系统，但是Sigpatch还缺17.0.0的FS补丁，最高只有16.1.0，更新大气层1.6.1的破解包以后完全可以：
 
-正版系统升级到17.0.0，能正常玩正版游戏
+正版系统升级到17.0.0，能正常玩正版游戏。
 
-虚拟系统升级到16.1.0，能正常玩破解游戏
+虚拟系统升级到16.1.0，能正常玩破解游戏。
 
 1、大气层sigpatch签名补丁=允许大气层破解SW系统以后能玩安装和玩NSP，XCI等破解游戏或者NSP自制软件。
 
-大气层作者支持破解，但不支持玩破解游戏。当前的大气层sigpatch签名补丁就是包括ES、FS、NIFM补丁和Loader补丁，只有正确的签名补丁对应SW系统和大气层才能正常玩破解游戏
+大气层作者支持破解，但不支持玩破解游戏。当前的大气层sigpatch签名补丁就是包括ES、FS、NIFM补丁和Loader补丁，只有正确的签名补丁对应SW系统和大气层才能正常玩破解游戏。
 
 2、ES补丁在TF卡atmosphere/exefs_patches/es_patches，对应SW系统，每次SW系统大版本升级会需要新增1个IPS。
 
-当前17.0.0最新系统，新增17.0.0的ES补丁以后，一共是25个IPS文件
+当前17.0.0最新系统，新增17.0.0的ES补丁以后，一共是25个IPS文件。
 
 ES补丁允许你从Eshop商店dump出来的原版NSP（含压缩格式NSZ）游戏文件安装和正常运行。
 
 3、FS补丁在TF卡的atmosphere/kip_patches/fs_patches，对应SW系统，每次SW系统大版本升级会需要新增2个IPS（exfat和fat32）。
 
-当前17.0.0最新系统，但只有最高16.1.0的FS补丁，一共是51个IPS文件
+当前17.0.0最新系统，但只有最高16.1.0的FS补丁，一共是51个IPS文件，因为SW1.0系统无exfat驱动。
 
 FS补丁允许你使用非原版NSP文件（NSP，NSZ，XCI，XCZ）的安装和正常运行，包括NRO转NSP的自制软件，整合版XCI，NSP等格式的游戏安装包。
 
 4、NIFM补丁在TF卡的atmosphere/exefs_patches/nfim_ctest，和SW系统有关，每次SW系统大版本升级会需要新增1个IPS。
 
-当前17.0.0最新系统，新增17.0.0的NIFM补丁以后，一共是24个IPS文件
+当前17.0.0最新系统，新增17.0.0的NIFM补丁以后，一共是24个IPS文件。
 
-NIFM补丁是忽略主机联网后强制连任天堂服务器认证的补丁
+NIFM补丁是忽略主机联网后强制连任天堂服务器认证的补丁。
 
 5、ES、FS、NIFM这三个补丁是和SW系统有关，虽然理论上最好齐全，这样SW系统降级以后也能正常玩破解游戏，但是又有哪个NTR会降级系统到很低的版本呢？Switch现在的破解，降级到很低的系统有什么意思，是闲的慌还是脑子不好使了？
 
@@ -44,4 +44,4 @@ fss0引导的ES补丁和nfim补丁与fusee引导一样，没有区别。
 
 fss0引导的FS补丁和Loader补丁在TF卡的bootloader/patches.ini，不同于fusee引导。
 
-fss0引导，还要在Bootloader/Hekate_ipl.ini中添加“kip1patch=nosigchk”
+fss0引导，还要在Bootloader/Hekate_ipl.ini中添加“kip1patch=nosigchk”。
